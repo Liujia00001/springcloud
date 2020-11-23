@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: order
+
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
